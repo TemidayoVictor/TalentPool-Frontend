@@ -342,7 +342,7 @@ html {
 @media screen and (max-width: 780px) {
   
   html {
-    font-size: 80%;
+    font-size: 75%;
   }
 
   .desktop {
@@ -475,6 +475,11 @@ html {
   .terms {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .social-ic {
+    width: 20px;
+    height: 20px;
   }
 
 }
