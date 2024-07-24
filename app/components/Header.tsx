@@ -16,11 +16,11 @@ const Header = () => {
                 </a>
                 <div className={`nav-links flex ${active ? 'active' : ''} `}>
                     <div className="nav-link-a">
-                        <a href="#" className="link">Home</a>
+                        <a href="/" className="link">Home</a>
                         <a href="#" className="link">About Us</a>
-                        <a href="#" className="link">Tasks</a>
+                        <a href="/tasks" className="link">Tasks</a>
                         
-                        <a href="#" className="link">Solvers</a>
+                        <a href="/talents" className="link">Talents</a>
                     </div>
                 
                     <div className="btn-group">    

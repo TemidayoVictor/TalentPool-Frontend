@@ -13,6 +13,7 @@
   --border: 1px solid var(--color-primary);
   --border-2: 1px solid #000;
   --border-3: 1px solid #fff;
+  --border-4: 1px solid #e6e3e3;
   --bg-muted-light: #f9f9f9;
   /* --bg-light: #f2f0f5;
   --color-primary-2: #2c055a;
@@ -307,6 +308,85 @@ html {
 
 /* Home Section Ends */
 
+/* Tasks Page Begins */
+
+.tasks-body {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.cat-title {
+  background-color: var(--color-primary);
+  color: var(--white);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.category-link {
+  display: block;
+  color: var(--black);
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: .5em;
+  text-transform: capitalize;
+  border-bottom: var(--border-4);
+}
+
+.category-link:last-child {
+  border-bottom: none;
+}
+
+.category-link:hover {
+  color: var(--white);
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius);
+  border-color: 1px solid transparent
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1em;
+  border-bottom: var(--border-4);
+  padding-bottom: 2em;
+  margin-bottom: 2em;
+}
+
+.task:last-child {
+  border-bottom: none;
+}
+
+.task:hover {
+  background-color: rgb(214, 211, 211);
+}
+
+.task-title h2 {
+  color: var(--color-primary);
+}
+
+.task-req {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .3em;
+}
+
+.task-req p {
+  padding: .4em 1em;
+  border-radius: 10px;
+  background-color: rgb(218, 212, 212);
+  color: var(--black);
+  border: 1px solid transparent;
+}
+
+.task:hover .task-req p {
+  border: var(--border);
+}
+
+
+/* Tasks Page Ends */
+
 /* Footer */
 
 .footer {
@@ -480,6 +560,23 @@ html {
   .social-ic {
     width: 20px;
     height: 20px;
+  }
+
+  .tasks-body {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .task-req {
+    gap: .5em;
+  }
+  
+  .task-req p {
+    padding: .4em .8em;
+    border-radius: 10px;
+    background-color: rgb(218, 212, 212);
+    color: var(--black);
+    border: 1px solid transparent;
   }
 
 }
