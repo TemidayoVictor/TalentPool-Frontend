@@ -481,7 +481,7 @@ html {
 @media screen and (max-width: 780px) {
   
   html {
-    font-size: 75%;
+    font-size: 85%;
   }
 
   .desktop {
@@ -638,4 +638,12 @@ html {
     border: 1px solid transparent;
   }
 
+}
+
+@media screen and (max-width: 480px) {
+  .log-con {
+    width: 100%;
+    padding: 1em;
+    border: none;
+  }
 }
