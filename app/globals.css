@@ -52,6 +52,14 @@ html {
   max-width: 85%;
 }
 
+.color-primary {
+  color: var(--color-primary);
+}
+
+.bor-bot-cp {
+  border-bottom: 1px solid var(--color-primary);
+}
+
 .top-padding {
   padding-top: 8rem;
 }
@@ -94,11 +102,13 @@ html {
   padding: .3em 1em;
   border-radius: var(--border-radius);
   text-align: center;
+  outline: none;
 }
 
 .btn:hover {
   background-color: transparent;
   color: var(--color-primary);
+  cursor: pointer;
 }
 
 .inverted {
@@ -384,8 +394,57 @@ html {
   border: var(--border);
 }
 
-
 /* Tasks Page Ends */
+
+
+/* Login and Sign up */
+
+.log-con {
+  border-radius: var(--border-radius);
+  width: 30rem;
+  padding: 3em 2em;
+}
+
+.input {
+  padding: .3em;
+  border: none;
+  margin-block: .6em;
+  outline: none;
+  border-bottom: var(--border-4);
+}
+
+.input:focus {
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.sign-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.sign-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+  gap: 1em;
+}
+
+.sign-grid-item {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  text-align: center;
+  padding: 1em;
+}
+
+.sign-grid-item:hover {
+  background-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.sign-grid-item:hover .fa, .sign-grid-item:hover h2, .sign-grid-item:hover p {
+  color: var(--white);
+}
+
 
 /* Footer */
 

@@ -11,7 +11,7 @@ const Header = () => {
     return(
         <div className="header">
             <div className="container flex">
-                <a className="logo" href="#">
+                <a className="logo" href="/">
                     <h1>TalentPool</h1>
                 </a>
                 <div className={`nav-links flex ${active ? 'active' : ''} `}>
@@ -24,8 +24,8 @@ const Header = () => {
                     </div>
                 
                     <div className="btn-group">    
-                        <a href="#" className="btn btn-header">Sign Up</a>
-                        <a href="#" className="btn btn-header">Login</a>
+                        <a href="/signup" className="btn btn-header">Sign Up</a>
+                        <a href="/login" className="btn btn-header">Login</a>
                     </div>
                 </div>
                 <div className="mobile">
