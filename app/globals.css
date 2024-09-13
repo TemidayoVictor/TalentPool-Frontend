@@ -189,12 +189,12 @@ html {
   font-weight: 500;
   font-size: 1rem;
   padding-bottom: .2em;
+  border-bottom: 1px solid transparent;
 }
 
 .link:hover {
   color: var(--color-primary);
   border-bottom: var(--border);
-  font-weight: bold;
 }
 
 .btn-group {
